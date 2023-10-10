@@ -10,7 +10,7 @@ $(function(){
         success : function(data){
             if(data.length>0){
                 for(var i in data){
-                    $(".section02_ebook_banner_wrap .swiper_wrapper .swiper_slider").eq(i).append("<a href='#'><img src='img/"+data[i].url+"' alt='#'></a>");
+                    $(".section02_ebook_banner_wrap .swiper_wrapper .swiper_slider").eq(i).append("<a href='./sub.html' target='_self'><img src='img/"+data[i].url+"' alt='#'></a>");
                 }
             }
         }

@@ -30,7 +30,7 @@ $(function () {
 
         // 썸네일, 호버 레이어
         $cover.append(
-          "<a href='#'><img src='" +
+          "<a href='./sub.html' target='_self'><img src='" +
             book.thumbnail +
             "' alt='" +
             book.title +

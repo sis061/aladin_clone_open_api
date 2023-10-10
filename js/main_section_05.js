@@ -7,7 +7,7 @@ $(function(){
         success : function(data){
             if(data.length>0){
                 for(var i in data){
-                    $(".section05_list .swiper_wrapper .swiper_slider").eq(i).append("<a href='#'><img src='img/"+data[i].url+"' alt='"+data[i].title+"'><div class='title_gift'>"+data[i].title+"</div></a>");
+                    $(".section05_list .swiper_wrapper .swiper_slider").eq(i).append("<a href='./sub.html' target='_self'><img src='img/"+data[i].url+"' alt='"+data[i].title+"'><div class='title_gift'>"+data[i].title+"</div></a>");
                 }
             }
         }

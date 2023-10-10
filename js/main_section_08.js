@@ -49,7 +49,7 @@ $(function () {
 
         // 썸네일
         $cover.append(
-          "<a href='#'><img src='" +
+          "<a href='./sub.html' target='_self'><img src='" +
             book.thumbnail +
             "' alt='" +
             book.title +
@@ -60,7 +60,7 @@ $(function () {
         // 제목
         var $text = $("<div class='text'></div>");
         var $title = $("<div class='title'></div>");
-        $title.append("<a href='#'>" + book.title + "</a>");
+        $title.append("<a href='./sub.html' target='_self'>" + book.title + "</a>");
         $text.append($title);
         $swiperSlider.append($text);
 

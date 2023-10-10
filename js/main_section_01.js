@@ -10,7 +10,7 @@ $(function(){
         success : function(data){
             if(data.length>0){
                 for(var i in data){
-                    $(".section01_list_04 .swiper_wrapper .swiper_slider").eq(i).append("<div class='cover_goods'><a href='#'><img src='img/"+data[i].url+"' alt='#'></a></div>");
+                    $(".section01_list_04 .swiper_wrapper .swiper_slider").eq(i).append("<div class='cover_goods'><a href='./sub.html' target='_self'><img src='img/"+data[i].url+"' alt='#'></a></div>");
                     $(".section01_list_04 .swiper_wrapper .swiper_slider").eq(i).append("<div class='text'><div class='title'><a href='./sub.html'>"+data[i].title+"</a></div><div class='sub'>"+data[i].sub+"</div></div>");
                 }
             }
@@ -54,14 +54,14 @@ $(function () {
                     var $cover = $("<div class='cover'></div>");
 
                     // 썸네일
-                    $cover.append("<a href='#'><img src='" + book.thumbnail + "' alt='" + book.title + "' /></a>");
+                    $cover.append("<a href='./sub.html' target='_self'><img src='" + book.thumbnail + "' alt='" + book.title + "' /></a>");
                     $swiperSlider.append($cover);
 
                     // 제목, 서브
                     var $text = $("<div class='text'></div>");
                     var $title = $("<div class='title'></div>");
                     var $contents = $("<div class='sub'>"+ book.contents +"</div>");
-                    $title.append("<a href='#'>" + book.title + "</a>");
+                    $title.append("<a href='./sub.html' target='_self'>" + book.title + "</a>");
                     
                     $text.append($title);
                     $text.append($contents);
@@ -107,14 +107,14 @@ $(function () {
                     var $cover = $("<div class='cover'></div>");
 
                     // 썸네일
-                    $cover.append("<a href='#'><img src='" + book.thumbnail + "' alt='" + book.title + "' /></a>");
+                    $cover.append("<a href='./sub.html' target='_self'><img src='" + book.thumbnail + "' alt='" + book.title + "' /></a>");
                     $swiperSlider.append($cover);
 
                     // 제목, 서브
                     var $text = $("<div class='text'></div>");
                     var $title = $("<div class='title'></div>");
                     var $contents = $("<div class='sub'>"+ book.contents +"</div>");
-                    $title.append("<a href='#'>" + book.title + "</a>");
+                    $title.append("<a href='./sub.html' target='_self'>" + book.title + "</a>");
                     
                     $text.append($title);
                     $text.append($contents);
@@ -158,14 +158,14 @@ $(function () {
                     var $cover = $("<div class='cover'></div>");
 
                     // 썸네일
-                    $cover.append("<a href='#'><img src='" + book.thumbnail + "' alt='" + book.title + "' /></a>");
+                    $cover.append("<a href='./sub.html' target='_self'><img src='" + book.thumbnail + "' alt='" + book.title + "' /></a>");
                     $swiperSlider.append($cover);
 
                     // 제목, 서브
                     var $text = $("<div class='text'></div>");
                     var $title = $("<div class='title'></div>");
                     var $contents = $("<div class='sub'>"+ book.contents +"</div>");
-                    $title.append("<a href='#'>" + book.title + "</a>");
+                    $title.append("<a href='./sub.html' target='_self'>" + book.title + "</a>");
                     
                     $text.append($title);
                     $text.append($contents);

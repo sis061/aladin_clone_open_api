@@ -30,7 +30,7 @@ $(function () {
 
         // 썸네일
         $cover.append(
-          "<a href='#'><img src='" +
+          "<a href='./sub.html' target='_self'><img src='" +
             book.thumbnail +
             "' alt='" +
             book.title +
@@ -45,7 +45,7 @@ $(function () {
         var $sale_price = book.sale_price
           .toString()
           .replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-        $title.append("<a href='#'>" + book.title + "</a>");
+        $title.append("<a href='./sub.html' target='_self'>" + book.title + "</a>");
         $price.append($sale_price + "원");
 
         $text.append($title);
