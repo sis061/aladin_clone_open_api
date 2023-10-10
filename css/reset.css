@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/*------------Reset------------*/
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+body {
+    font-family: '돋움',Helvetica,"Apple SD Gothic Neo",sans-serif;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}

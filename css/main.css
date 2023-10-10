@@ -1,0 +1,1558 @@
+@charset "UTF-8";
+
+/*--------------------메인--------------------*/
+/*--------------------메인 공통 CSS--------------------*/
+/*--------------------메인 공통 CSS : 좌우 이동 원형 button--------------------*/
+
+.swiper_btn_prev,
+.swiper_btn_next {
+    position: absolute;
+    top: 50%;
+    width: 42px;
+    height: 42px;
+    margin-top: -20px;
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+
+
+/*--------------------메인 공통 CSS : Slider--------------------*/
+
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+
+.swiper_wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    box-sizing: content-box;
+}
+
+.swiper_slider {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.title a:hover {
+    text-decoration: underline;
+}
+
+/*------------메인 공통 CSS : 섹션03 04 06 07 08 10 11 슬라이더------------*/
+
+.swiper_bookbox .swiper_wrapper {
+    height: auto;
+    position: relative;
+}
+
+.swiper_bookbox .swiper_slider {
+    width: 182px!important;
+    margin-right: 30px;
+    position: relative;
+}
+
+.swiper_bookbox .swiper_slider:nth-of-type(5n) {
+    margin-right: 0;
+}
+
+.swiper_bookbox .cover {
+    width: 180px;
+    position: relative;
+    margin-bottom: 8px;
+    padding: 5px;
+}
+
+.swiper_bookbox .cover img {
+    width: 170px;
+    border: 1px #e2e2e2 solid;
+}
+
+/*--------------------메인 공통 CSS : 섹션 제목 h3--------------------*/
+
+#main_wrap h3 {
+    font-size: 22px;
+    letter-spacing: -0.5px;
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+#main_wrap h3 a {
+    text-decoration: none;
+    color: #333;
+}
+
+#main_wrap h3 a::after {
+    content: '';
+    display: inline-block;
+    width: 7px;
+    height: 15px;
+    background: url(../img/108_icon_arrow-right.png) no-repeat center / 7px auto;
+    margin-left: 10px;
+}
+
+/*--------------------메인 공통 CSS //--------------------*/
+
+/*------------Scroll Top 버튼------------*/
+.btn_scrollTop {
+    position: fixed;
+    width: 74px;
+    height: 74px;
+    background: url(../img/001_go-top.png) no-repeat;
+    bottom: 40px;
+    right: 30px;
+    font-size: 0;
+    border: 0;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+/*------------메인 좌우측 고정 배너------------*/
+
+.floating_bn_wrap {
+    width: 1030px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.floating_banner_l {
+    width: 105px;
+    height: 135px;
+    position: absolute;
+    left: -112px;
+    top: 0;
+}
+
+.floating_banner_r {
+    position: absolute;
+    right: -85px;
+    top: 0;
+    width: 76px;
+}
+
+.banner_r_btn {
+    width: 100%;
+    min-height: 24px;
+    background-color: #EE3C97;
+    border: 1px solid #D92883;
+    color: #fff;
+    font-size: 12px;
+    line-height: 1.4;
+    text-align: center;
+    margin-bottom: 5px;
+    font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box;
+    padding: 3px 0;
+    display: block;
+}
+
+.floating_banner_r a img {
+    margin-top: 5px;
+}
+
+/*------------메인 내용 시작------------*/
+
+#main_wrap {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/*------------메인 top 팝업 배너 섹션------------*/
+
+.popup_banner_box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 18;
+}
+
+.popup_banner_img {
+    width: 1030px;
+    height: 422px;
+    border-radius: 6px;
+    border: 1px solid #a4a4a4;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.popup_banner_img a img {
+    width: 100%;
+}
+
+.popup_banner_btn {
+    background-color: #fff;
+    text-align: right;
+    padding: 5px 0;
+}
+
+.popup_banner_tab {
+    position: absolute;
+    top: 140px;
+    left: -30px;
+    display: flex;
+    flex-flow: column;
+}
+
+.popup_banner_tab a {
+    height: 77px;
+}
+
+/*------------메인 top 섹션------------*/
+.main_top_wrap {
+    width: 1030px;
+    height: 448px;
+    margin: 0 auto;
+    background-color: #E5EFF7;
+    padding: 5px 5px 0 5px;
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+/*------------메인 top 섹션 Slider------------*/
+.main_top_contents {
+    width: 100%;
+    height: 385px;
+    background-color: #fff;
+    border-radius: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+
+.main_top_contents .swiper_wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    box-sizing: content-box;
+}
+
+.main_top_contents .swiper_slider_bookbox {
+    width: 1020px;
+    height: 100%;
+    flex-shrink: 0;
+    z-index: 1;
+    padding: 28px 50px 26px 49px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+.swiper_slider_bookbox>div {
+    float: left;
+    width: 210px;
+    height: 100%;
+    position: relative;
+}
+
+.swiper_slider_bookbox>div .cover {
+    width: 170px;
+    height: 260px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto 5px auto;
+    background: url(../img/125_top_fl_sh.png) no-repeat center bottom;
+}
+
+.swiper_slider_bookbox>div .title {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: -1.5px;
+    margin-bottom: 4px;
+    color: #333;
+}
+
+.swiper_slider_bookbox>div .sub {
+    font-size: 13px;
+    font-weight: bold;
+    color: #2A68B9;
+    text-align: center;
+    letter-spacing: -1px;
+    margin-bottom: 4px;
+}
+
+.swiper_slider_bookbox>div>a>.author {
+    font-size: 13px;
+    color: #737373;
+    text-align: center;
+}
+
+.swiper_slider_imgbox {
+    width: 1020px;
+    z-index: 9;
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+.swiper_slider_imgbox>div {
+    float: left;
+    position: relative;
+}
+
+.swiper_slider_imgbox div~div {
+    padding-left: 62px;
+}
+
+.swiper_slider_imgbox div~div::before {
+    content: '';
+    display: block;
+    width: 41px;
+    height: 337px;
+    background: url(https://image.aladin.co.kr/img/banner/flash/welcome/ev_line.png);
+    position: absolute;
+    left: 10px;
+    top: 0;
+}
+
+/*------------메인 top 섹션 하단 탭------------*/
+.main_top_tab {
+    width: 100%;
+    height: 58px;
+}
+
+.main_top_tab .swiper_wrapper {
+    position: relative;
+    width: 98%;
+    height: 34px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: content-box;
+    padding: 11px 0;
+    margin-left: 10px;
+}
+
+.main_top_tab .swiper_wrapper .swiper_slider {
+    width: 11.11%;
+    height: 34px;
+    line-height: 33px;
+    color: #3C5980;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+
+.main_top_tab_selected {
+    color: #fff!important;
+    background-color: #2A68B9;
+    border-radius: 17px;
+
+}
+
+/*------------메인 섹션01 편집장의 선택 & 광고 배너------------*/
+
+.section01 {
+    width: 1030px;
+    height: 390px;
+    margin: 0 auto 50px auto;
+    display: flex;
+}
+
+/*------------메인 섹션01 편집장의 선택------------*/
+
+.section01_contents {
+    flex-grow: 1;
+    margin-right: 36px;
+    position: relative;
+}
+
+/*------------메인 섹션01 편집장의 선택 상단 탭------------*/
+
+.section01_tab {
+    position: relative;
+    width: 100%;
+    height: 35px;
+    border-bottom: 1px solid #dadada;
+    margin-bottom: 10px;
+}
+
+.section01_tab a {
+    display: inline-block;
+    width: 110px;
+    height: 35px;
+    border-radius: 6px 6px 0 0;
+    background-color: #EDEFF1;
+    font-size: 13px;
+    position: relative;
+    text-align: center;
+    line-height: 36px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #dadada;
+    overflow: hidden;
+    color: #333;
+}
+
+.section01_tab a.on {
+    background-color: #fff;
+    border: 1px #dadada solid;
+    border-bottom: none;
+    font-weight: bold;
+}
+
+.section01_tab a.on::after {
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+}
+
+/*------------메인 섹션01 편집장의 선택 상단 좌측 좌우이동 버튼------------*/
+
+.section01_btn {
+    width: 63px;
+    height: 27px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.section01_btn>div {
+    width: 100%;
+}
+
+.section01_btn button {
+    display: block;
+    width: 27px;
+    height: 27px;
+    background-color: #fff;
+    border: 1px solid #E9E9E9;
+    box-shadow: 0px 3px 6px #0000000F;
+    border-radius: 50%;
+    font-size: 1px;
+    color: transparent;
+    overflow: hidden;
+    position: relative;
+    text-indent: -999em;
+}
+
+.editor_button_prev::after {
+    background: url(../img/109_icon_arrow-left.png) no-repeat center right 10px / 6px auto;
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0.6;
+}
+
+.editor_button_next {
+    margin-left: 7px;
+}
+
+.editor_button_next::after {
+    background: url(../img/108_icon_arrow-right.png) no-repeat center right 10px / 6px auto;
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0.6;
+}
+
+.section01_btn button:hover::after {
+    opacity: 1;
+    cursor: pointer;
+}
+
+/*------------메인 섹션01 편집장의 선택 슬라이더 book type------------*/
+
+.section01_contents .swiper {
+    width: 685px;
+}
+
+.section01_contents .swiper_wrapper {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 35px;
+}
+
+
+.section01_contents .swiper_slider {
+    width: 156.25px;
+    margin-right: 20px;
+}
+
+.section01_contents .cover {
+    width: 154px;
+    position: relative;
+    overflow: hidden;
+}
+
+.section01_contents .cover a {
+    padding: 10px;
+}
+
+.section01_contents .cover a img {
+    width: 134px;
+    border: 1px #e2e2e2 solid;
+}
+
+.section01_contents .text {
+    width: 100%;
+    height: 90px;
+    overflow: hidden;
+}
+
+.section01_contents .text .title {
+    width: calc(100% - 20px);
+    max-height: 42px;
+    margin: 4px 10px 8px 10px;
+    font-size: 15px;
+    font-weight: bold;
+    overflow: hidden;
+    line-height: 1.4;
+    letter-spacing: -0.5px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.section01_contents .text .title a {
+    display: block;
+    transition: none;
+    transform: translate3d(0, 0, 0);
+    -webkit-font-smoothing: auto;
+}
+
+.section01_contents .text .sub {
+    max-height: 36px;
+    margin: 0 10px;
+    font-size: 13px;
+    letter-spacing: -0.8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+/*------------메인 섹션01 알라딘굿즈 슬라이더 img type------------*/
+
+.section01_list_04 .swiper_wrapper {
+    margin-top: 0px;
+}
+
+.section01_list_04 .swiper_slider {
+    width: 228.333px;
+    margin-right: 0;
+}
+
+.section01_list_04 .cover_goods {
+    width: 228px;
+    height: 230px;
+    position: relative;
+}
+
+.section01_list_04 .cover_goods a {
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.section01_list_04 .cover_goods img {
+    width: 208px;
+    border: 1px #e2e2e2 solid;
+}
+
+
+/*------------메인 섹션01 광고 배너------------*/
+/*------------메인 섹션01 광고 배너 슬라이더------------*/
+
+.section01_banner_wrap {
+    width: 305px;
+    height: 362px;
+    flex-shrink: 0;
+    border: 1px #E8E8E8 solid;
+    border-radius: 6px;
+}
+
+.section01_banner_wrap .swiper_wrapper {
+    cursor: grab;
+    height: auto;
+    overflow: visible;
+}
+
+.section01_banner_wrap .swiper_slider {
+    width: 305px;
+    z-index: 2;
+}
+
+
+
+/*------------메인 섹션01 광고 배너 좌우 이동 버튼------------*/
+.section01_banner_wrap .swiper_btn_prev {
+    width: 40px;
+    height: 40px;
+    background: url(../img/126_arrow-left-white.png) rgba(58, 58, 58, 0.3) no-repeat center / 10px auto;
+    left: 5px;
+    opacity: 0;
+}
+
+.section01_banner_wrap .swiper_btn_next {
+    width: 40px;
+    height: 40px;
+    background: url(../img/127_arrow-right-white.png) rgba(58, 58, 58, 0.3) no-repeat center / 10px auto;
+    right: 5px;
+    opacity: 0;
+}
+
+.section01_banner_wrap:hover .swiper_btn_prev,
+.section01_banner_wrap:hover .swiper_btn_next {
+    opacity: 1;
+}
+
+.section01_banner_wrap .swiper_btn_prev:hover,
+.section01_banner_wrap .swiper_btn_next:hover {
+    background-color: rgba(58, 58, 58, 0.6);
+}
+
+/*------------메인 섹션01 광고 배너 우측 상단 페이지네이션------------*/
+.section01_banner_wrap .swiper-pagination {
+    position: absolute;
+    text-align: right;
+    z-index: 10;
+
+    right: 0;
+    top: 0;
+    bottom: auto;
+    left: auto;
+    text-align: right;
+    font-size: 12px;
+    color: #737373;
+    padding: 8px 15px 0 0;
+}
+
+.section01_banner_wrap .swiper-pagination span {
+    display: inline-block;
+    margin: 0 -3px;
+}
+
+/*------------메인 섹션02 어제 베스트셀러 TOP 10------------*/
+.section02 {
+    width: 1030px;
+    height: 258px;
+    margin: 0 auto 50px auto;
+    display: flex;
+}
+
+.section02_bestseller_box {
+    flex-grow: 1;
+}
+
+.bestseller_list {
+    height: 208px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.bestseller_list li {
+    display: flex;
+    width: 250px;
+    height: 52px;
+    margin-right: 30px;
+    align-items: center;
+    border-bottom: 1px solid #EAEAEA;
+    box-sizing: border-box;
+    position: relative;
+    padding-right: 38px;
+}
+
+.bestseller_list li:nth-child(1),
+.bestseller_list li:nth-child(2) {
+    height: 104px;
+}
+
+.bestseller_list li .cover {
+    width: 58px;
+    max-height: 72px;
+    overflow: hidden;
+    border: 1px solid #E8E8E8;
+    border-radius: 4px;
+    margin-right: 11px;
+    flex-shrink: 0;
+}
+
+.bestseller_list li img {
+    width: 100%;
+}
+
+.bestseller_list li:nth-child(1) p,
+.bestseller_list li:nth-child(2) p {
+    height: auto;
+    line-height: 1.4;
+    -webkit-line-clamp: 4;
+}
+
+.bestseller_list li .rank {
+    width: 25px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Noto Sans KR', sans-serif;
+    flex-shrink: 0;
+}
+
+.bestseller_list li p {
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    line-height: 50px;
+    overflow: hidden;
+    font-weight: bold;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.bestseller_list li .status {
+    position: absolute;
+    right: 5px;
+    top: 16px;
+    padding-left: 10px;
+    font-weight: bold;
+    color: #737373;
+    font-size: 12px;
+}
+
+.bestseller_list li:nth-child(1) .status,
+.bestseller_list li:nth-child(2) .status {
+    top: 68px;
+}
+
+.up {
+    background: url(../img/130_icon_ranking-up.png) no-repeat left center / 6px auto;
+}
+
+.still {
+    width: 4px;
+    height: 1px;
+    background: url(https://image.aladin.co.kr/img/welcome/standstill.svg) no-repeat center / 10px 1px;
+    margin-top: 8px;
+}
+
+.down {
+    background: url(../img/131_icon_ranking-down.png) no-repeat left center / 6px auto;
+}
+
+/*------------메인 섹션02 광고 배너------------*/
+/*------------메인 섹션02 광고 배너 슬라이더------------*/
+
+.section02_ebook_banner_wrap {
+    width: 192px;
+    flex-shrink: 0;
+    margin-top: 45px;
+    border: 1px #E8E8E8 solid;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+}
+
+.section02_ebook_banner_wrap .swiper_wrapper {
+    height: auto;
+}
+
+/*------------메인 섹션02 광고 배너 좌우 이동 버튼------------*/
+.section02_ebook_banner_wrap .swiper_btn_prev,
+.section02_ebook_banner_wrap .swiper_btn_next {
+    bottom: 9px;
+    top: auto;
+    width: 20px;
+    height: 20px;
+    z-index: 12;
+}
+
+.section02_ebook_banner_wrap .swiper_btn_prev {
+    background: url(../img/109_icon_arrow-left.png) no-repeat center / 6px auto;
+    left: 10px;
+    opacity: 0.5;
+}
+
+.section02_ebook_banner_wrap .swiper_btn_next {
+    background: url(../img/108_icon_arrow-right.png) no-repeat center / 6px auto;
+    left: 59px;
+    opacity: 0.5;
+}
+
+/*------------메인 섹션02 광고 배너 우측 상단 페이지네이션------------*/
+.section02_ebook_banner_wrap .swiper-pagination {
+    position: absolute;
+    width: 40px;
+    left: 25px;
+    bottom: 12px;
+    text-align: center;
+    z-index: 10;
+
+    font-size: 12px;
+    color: #737373;
+}
+
+.section02_ebook_banner_wrap .swiper-pagination span {
+    display: inline-block;
+    margin: 0 -3px;
+}
+
+/*------------메인 배너 width:100%------------*/
+
+.full_width_banner {
+    width: 100%;
+    height: 130px;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.full_width_banner .swiper_wrapper {
+    position: relative;
+
+}
+
+.full_width_banner_01 {
+    background-color: rgb(201, 232, 244);
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+.full_width_banner_02 {
+    background-color: rgb(201, 244, 218);
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+.full_width_banner_03 {
+    background-color: #CCF7F3;
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+.full_width_banner .swiper_slider::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 30px;
+    background-color: #fff;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+
+.full_width_banner a {
+    height: 130px;
+    display: block;
+    text-align: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+/*------------메인 배너 width:100% 좌우 이동 버튼------------*/
+.full_width_banner .swiper_btn_prev {
+    width: 40px;
+    height: 40px;
+    background: url(../img/126_arrow-left-white.png) rgba(58, 58, 58, 0.3) no-repeat center / 10px auto;
+    left: 435px;
+    top: 80px;
+    opacity: 0;
+}
+
+.full_width_banner .swiper_btn_next {
+    width: 40px;
+    height: 40px;
+    background: url(../img/127_arrow-right-white.png) rgba(58, 58, 58, 0.3) no-repeat center / 10px auto;
+    right: 435px;
+    top: 80px;
+    opacity: 0;
+}
+
+.full_width_banner:hover .swiper_btn_prev,
+.full_width_banner:hover .swiper_btn_next {
+    opacity: 1;
+}
+
+.full_width_banner .swiper_btn_prev:hover,
+.full_width_banner .swiper_btn_next:hover {
+    background-color: rgba(58, 58, 58, 0.6);
+}
+
+/*------------메인 배너 width:100% 우측 상단 페이지네이션------------*/
+.full_width_banner .swiper-pagination {
+    position: absolute;
+    text-align: right;
+    z-index: 10;
+
+    right: 435px;
+    top: 30px;
+    bottom: auto;
+    left: auto;
+    text-align: right;
+    font-size: 12px;
+    color: #737373;
+    padding: 8px 15px 0 0;
+}
+
+.full_width_banner .swiper-pagination span {
+    display: inline-block;
+    margin: 0 -3px;
+}
+
+/*------------메인 섹션03 추천마법사------------*/
+
+.section_03 {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.section03_contents {
+    width: 1030px;
+    margin: 0 auto 70px auto;
+    position: relative;
+}
+
+.login_text {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 14px;
+    font-family: Malgun Gothic, Dotum, '돋움', Helvetica, "Apple SD Gothic Neo", sans-serif;
+    font-weight: normal;
+}
+
+#main_wrap h3 .login_text a {
+    display: inline-block;
+    margin-left: 5px;
+    color: #2A68B9;
+    text-decoration: underline;
+}
+
+#main_wrap h3 .login_text a::after {
+    content: " ";
+    background: none;
+}
+
+.swiper_bookbox .text {
+    height: 44px;
+}
+
+.swiper_bookbox .title {
+    max-height: 46px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0 5px;
+    box-sizing: border-box;
+    letter-spacing: -0.5px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 1.3;
+}
+
+.swiper_bookbox .title a {
+    display: block;
+    padding: 2px 0;
+    box-sizing: border-box;
+    transform: translate3d(0, 0, 0);
+    line-height: 1.4;
+    color: #333;
+    font-size: 15px;
+}
+
+.swiper_bookbox~.circle_default_prev,
+.swiper_bookbox~.circle_default_next {
+    top: calc(50% + 8px);
+}
+
+/*------------메인 섹션03 추천마법사 Btn Hidden : 장바구니에 담기 etc------------*/
+
+.section03_list .section03_btnlayer {
+    width: 170px;
+    height: 108px;
+    position: absolute;
+    bottom: 3px;
+    left: 6px;
+    background-color: rgba(75, 75, 75, 0.97);
+    display: none;
+    overflow: hidden;
+}
+
+.section03_list .section03_btnlayer a {
+    display: inline-block;
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+}
+
+.section03_list .section03_btnlayer a:hover {
+    background-color: #EB217C;
+}
+
+/*------------메인 섹션04 화제의 책 소식------------*/
+.section04 {
+    width: 1030px;
+    margin: 0 auto 70px auto;
+    position: relative;
+}
+
+.section04_list {
+    width: 100%;
+    height: auto;
+}
+
+.section04_list .swiper_wrapper {
+    height: auto;
+}
+
+.section04_list .swiper_slider {
+    width: 336px;
+    height: 226px;
+    border-radius: 4px;
+    background-color: #F3F3F5;
+    box-sizing: border-box;
+
+    margin-right: 11px;
+    padding: 25px 20px;
+}
+
+.section04_list .swiper_slider_flex_wrap{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.section04_list .cover {
+    flex-shrink: 0;
+    width: 115px;
+    max-height: 176px;
+    overflow: hidden;
+    box-shadow: 0px 2px 5px #00000019;
+}
+
+.section04_list .cover img {
+    width: 100%;
+}
+
+.text_right {
+    margin-left: 15px;
+    ;
+}
+
+.section04_list .title {
+    max-height: 46px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0 5px;
+    box-sizing: border-box;
+    letter-spacing: -0.5px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 1.3;
+}
+
+.section04_list .title a {
+    display: block;
+    padding: 2px 0;
+    box-sizing: border-box;
+    transform: translate3d(0, 0, 0);
+    line-height: 1.4;
+    color: #333;
+    font-size: 15px;
+}
+
+.text_right .title a:hover {
+    text-decoration: none;
+}
+
+.section04_list .sub {
+    max-height: 36px;
+    font-size: 14px;
+    padding: 0 5px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    letter-spacing: -0.5px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.section04 .circle_default_prev,
+.section04 .circle_default_next {
+    top: calc(50% + 22px);
+}
+
+/*------------메인 섹션05 사은품------------*/
+.section05 {
+    width: 1030px;
+    margin: 0 auto 70px auto;
+    position: relative;
+}
+
+.section05_list {
+    width: 100%;
+    height: auto;
+}
+
+.section05_list .swiper_wrapper {
+    height: auto;
+}
+
+.section05_list .swiper_slider {
+    width: 336px;
+    height: 226px;
+    margin-right: 11px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.section05_list .swiper_slider img {
+    width: 100%;
+}
+
+.section05_list .title_gift {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 14px;
+    color: #fff;
+    width: 100%;
+    height: 38px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-left: 12px;
+    padding-top: 10px;
+
+    z-index: 2;
+    font-weight: bold;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+
+/*------------메인 섹션06 이달의 주목도서------------*/
+.section06 {
+    width: 1030px;
+    margin: 0 auto 70px auto;
+    position: relative;
+}
+
+.section06_list {
+    width: 100%;
+    height: auto;
+}
+
+/*------------메인 섹션07 이 주의 특가------------*/
+.section07 {
+    width: 1030px;
+    margin: 0 auto 70px auto;
+    position: relative;
+}
+
+.section07_list {
+    width: 100%;
+    height: auto;
+}
+
+.swiper_bookbox .text_price {
+    height: 72px;
+}
+
+.swiper_bookbox .price {
+    font-size: 16px;
+    color: #dd2483;
+    font-weight: bold;
+    padding: 0 5px;
+    box-sizing: border-box;
+    margin-top: 8px;
+}
+
+/*------------메인 섹션08 알라딘 스페셜------------*/
+.section08 {
+    width: 1030px;
+    height: auto;
+    margin: 0 auto 70px auto;
+    position: relative;
+}
+
+.section08_list {
+    width: 100%;
+}
+
+.section08_list .slick-track {
+    width: 13356px!important;
+}
+
+.section08 span {
+    display: inline-block;
+    height: 34px;
+    padding: 0 15px;
+    background-color: #d7f0f6;
+    color: #096b94;
+    border-radius: 17px 17px 17px 2px;
+    font-size: 15px;
+    line-height: 34px;
+    font-weight: normal;
+    vertical-align: bottom;
+    margin-left: 4px;
+}
+
+/*------------메인 슬라이드 배너------------*/
+.banner_slide {
+    width: 1030px;
+    margin: 0 auto 70px auto;
+    position: relative;
+}
+
+.banner_slide_list {
+    width: 1030px;
+    height: auto;
+    position: relative;
+}
+
+.banner_slide_list .swiper_wrapper {
+    height: auto;
+}
+
+.banner_slide_list .swiper_slider {
+    width: 336px;
+    height: 226px;
+    margin-right: 11px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.banner_slide_list .swiper_slider img {
+    width: 100%;
+}
+
+.banner_slide .circle_default_prev,
+.banner_slide .circle_default_next {
+    top: 45%;
+}
+
+/*------------메인 섹션09 투비 컨티뉴드------------*/
+.section09 {
+    width: 1030px;
+    margin: 0 auto 70px auto;
+    position: relative;
+}
+
+.section09_text_right {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.section09_text_right a {
+    font-size: 12px;
+    color: #737373;
+}
+
+.section09_text_right a::before {
+    content: '';
+    display: inline-block;
+    width: 33px;
+    height: 33px;
+    background: url(../img/118_icon_tb-simbol.png) no-repeat center / 100% auto;
+    vertical-align: middle;
+    margin-right: 3px;
+}
+
+.section09_text_right a::after {
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 8px;
+    background: url(../img/108_icon_arrow-right.png) no-repeat center / 100% auto;
+    vertical-align: middle;
+    margin-left: 3px;
+}
+
+.section09_list {
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+}
+
+.section09_list .slick-track {
+    width: 6864px!important;
+}
+
+.section09_list .swiper_wrapper {
+    height: auto;
+}
+
+.section09_list .swiper_slider {
+    width: 197px!important;
+    margin-right: 11px;
+}
+
+.section09_list .swiper_slider a {
+    display: block;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px #F3F3F5 solid;
+    box-sizing: border-box;
+}
+
+.section09_list .text_tobecont {
+    height: 115px;
+    background-color: #F3F3F5;
+    padding: 20px 13px;
+    box-sizing: border-box;
+}
+
+.section09_list .title {
+    height: 36px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 14px;
+    overflow: hidden;
+    word-break: keep-all;
+}
+
+.section09_list .author {
+    height: 18px;
+    font-size: 12px;
+    color: #6E6E6E;
+    overflow: hidden;
+}
+
+/*------------메인 섹션10 알라디너의 선택------------*/
+.section10 {
+    width: 1030px;
+    height: auto;
+    margin: 0 auto 70px auto;
+    position: relative;
+}
+
+.section10_list {
+    width: 100%;
+    height: auto;
+}
+
+.section10_list .slick-track {
+    width: 6360px!important;
+}
+
+.swiper_bookbox .text_type2 {
+    height: 88px;
+}
+
+.swiper_bookbox .sub {
+    max-height: 36px;
+    font-size: 14px;
+    padding: 0 5px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    letter-spacing: -0.5px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/*------------메인 섹션11 알라딘 오디오북------------*/
+.section11 {
+    width: 1030px;
+    margin: 0 auto 70px auto;
+    position: relative;
+}
+
+.section11_list {
+    width: 100%;
+    height: auto;
+}
+
+.section11_list .icon_audio {
+    background: url(../img/090_section11_icon_audio.png) no-repeat #36b3d1 center / 22px auto;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    font-size: 1px;
+
+    position: absolute;
+    bottom: 0;
+    left: 8px;
+    z-index: 10;
+}
+
+/*------------메인 섹션12 알라디너 TV & 작가와의 만남------------*/
+.section12 {
+    width: 1030px;
+    margin: 0 auto 70px auto;
+    position: relative;
+    display: flex;
+}
+
+.tv {
+    width: 618px;
+    position: relative;
+    margin-right: 45px;
+}
+
+.tv_contents_box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tv_contents {
+    width: 200px;
+    height: auto;
+}
+
+.tv_contents .cover {
+    width: 200px;
+    height: 113px;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+
+.tv_contents .cover a::after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    background: url(../img/094_section12_icon_tvplay.png) no-repeat center / 100%;
+    position: absolute;
+    right: 4px;
+    bottom: 4px;
+}
+
+.tv_contents .cover img {
+    width: 100%;
+}
+
+.tv_contents .title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    letter-spacing: -1px;
+}
+
+.tv_contents .tag_box {
+    max-height: 36px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    line-height: 1.3;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.tag_box .tag {
+    color: #2A68B9;
+    font-size: 12px;
+}
+
+.tv_contents .subtitle {
+    text-align: left;
+    font-size: 12px;
+    color: #444444;
+}
+
+.section12 .author {
+    width: 367px;
+}
+
+.section12 .author_contents_box {
+    margin-top: -9px;
+}
+
+.section12 .author_contents {
+    width: 100%;
+}
+
+.author_contents a {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    height: 100px;
+    position: relative;
+    margin-left: 95px;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.author_contents .cover {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    left: -95px;
+    top: 10px;
+}
+
+.author_contents .title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.author_contents .date {
+    font-size: 12px;
+    color: #737373;
+}
+
+/*------------------메인 // ------------------*/

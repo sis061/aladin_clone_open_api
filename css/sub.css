@@ -1,0 +1,1830 @@
+@charset "UTF-8";
+
+/*------------Sub 공통 CSS------------*/
+
+        div {
+            text-align: left;
+            color: #444444;
+        }
+
+        a {
+            text-decoration: none;
+            color: #444444;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .clear_box_space10 {
+            margin: 0;
+            padding: 0;
+            height: 10px;
+        }
+
+        .clear_box_space15 {
+            margin: 0;
+            padding: 0;
+            height: 15px;
+        }
+
+        .clear_box_space20 {
+            margin: 0;
+            padding: 0;
+            height: 20px;
+        }
+
+        .clear_box_space30 {
+            margin: 0;
+            padding: 0;
+            height: 30px;
+        }
+
+        .clear_box_space40 {
+            margin: 0;
+            padding: 0;
+            height: 40px;
+        }
+
+        .clear_box_space50 {
+            margin: 0;
+            padding: 0;
+            height: 50px;
+        }
+
+        .clear_box_space60 {
+            margin: 0;
+            padding: 0;
+            height: 60px;
+        }
+
+        .clear_box_PR10 {
+            padding-right: 10px;
+        }
+
+        .clear_box_PB10 {
+            padding-bottom: 10px;
+        }
+
+        .clear_box_PT10 {
+            padding-top: 10px;
+        }
+
+        .clear_box_line1 {
+            margin: 0;
+            padding: 0;
+            border-top: 1px solid #ccc;
+        }
+
+        .clear_box_Bline1 {
+            border: 1px solid #ccc;
+        }
+
+        .clear_box_line2 {
+            margin: 45px 0 40px 0;
+            padding: 0;
+            border-top: 1px solid #d5d5d5;
+        }
+
+        .clear_box_line3 {
+            margin: 0;
+            padding: 0;
+            border-top: 1px solid #cccccc;
+        }
+
+        .inner {
+            width: 1030px;
+            margin: 0 auto;
+        }
+
+        .opacity_on {
+            opacity: 1;
+        }
+
+        .opacity_off {
+            opacity: 0;
+        }
+
+        .overflow {
+            overflow: hidden;
+        }
+
+        .active {
+            display: block;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .relative {
+            position: relative;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+
+        .floatL,
+        .left {
+            float: left;
+        }
+
+        .floatR,
+        .right {
+            float: right;
+        }
+
+        .marginL4 {
+            margin-left: 4px;
+        }
+
+        .marginL7 {
+            margin-left: 7px;
+        }
+
+        .marginL10 {
+            margin-left: 10px;
+        }
+
+        .font_pink {
+            color: #eb217c;
+            text-decoration: none;
+            line-height: 1.5;
+        }
+
+        .font_blue {
+            color: #0fa8ff;
+            text-decoration: none;
+            line-height: 1.5;
+        }
+
+        .font_str {
+            font-weight: 600;
+        }
+
+        .font_normal {
+            font-weight: normal;
+        }
+
+        .font_sz13 {
+            font-size: 13px;
+        }
+
+        .font_sz14 {
+            font-size: 14px;
+        }
+
+        .font_sz15 {
+            font-size: 15px;
+        }
+
+        .font_sz16 {
+            font-size: 16px;
+        }
+
+        .font_sz17 {
+            font-size: 17px;
+        }
+
+        .font_sz18 {
+            font-size: 18px;
+        }
+
+        .font_sz24 {
+            font-size: 24px;
+        }
+
+        .textC {
+            text-align: center;
+        }
+
+        .line_ht11 {
+            line-height: 1.1;
+        }
+
+        .line_ht18 {
+            line-height: 1.8;
+        }
+
+        .gray2 {
+            color: #222;
+        }
+
+        .gray3 {
+            color: #333;
+        }
+
+        .gray7 {
+            color: #777;
+            text-decoration: none;
+        }
+
+        .gray8 {
+            color: #888;
+        }
+
+        .gray9 {
+            color: #999;
+        }
+
+        .border_top {
+            border-top: 1px solid #dfdfdf;
+        }
+
+        .border_bottom {
+            border-bottom: 1px solid #dfdfdf;
+        }
+
+        .border_topC {
+            border-top: 1px solid #ccc;
+        }
+
+        .border_bottomC {
+            border-bottom: 1px solid #ccc;
+        }
+
+        /*------------Scroll Top 버튼------------*/
+        .btn_scrollTop {
+            position: fixed;
+            width: 74px;
+            height: 74px;
+            background: url(../img/001_go-top.png) no-repeat;
+            bottom: 40px;
+            right: 30px;
+            font-size: 0;
+            border: 0;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        /*--------------------------상단 고정 팝업 ---------------- */
+        .top_fixed_slidedown {
+            left: 0;
+            top: 0;
+            z-index: 9999;
+            position: fixed;
+
+            box-shadow: 0 2px 2px #ccc;
+            background: rgba(248, 248, 248, 0.95);
+            padding: 10px 0;
+            width: 100%;
+            text-align: left;
+            overflow: hidden;
+        }
+
+        .top_fixed_slidedown .btnbox {
+            float: right;
+            width: 24%;
+            text-align: right;
+            padding-top: 10px;
+        }
+
+        .top_fixed_box {
+            width: 1060px;
+            margin: 0 auto;
+            text-align: left;
+            overflow: hidden;
+        }
+
+        .top_fixed_box .title ul li {
+            list-style: none;
+            font-size: 15px;
+            color: #333;
+            letter-spacing: -0.01em;
+            line-height: 1.5;
+        }
+
+        .top_fixed_box .title ul li a {
+            font-size: 17px;
+            letter-spacing: 1.5;
+        }
+
+        .top_fixed_slidedown .price {
+            font-size: 17px;
+            font-weight: bold;
+            color: #eb217c;
+            text-decoration: none;
+            line-height: 1.5;
+        }
+
+        .btn_sm_cart {
+            display: inline-block;
+            padding: 0;
+            vertical-align: middle;
+            text-align: center;
+            overflow: hidden;
+            text-decoration: none;
+            cursor: pointer;
+            background: #DF307F
+        }
+
+        .btn_sm_cart a {
+            white-space: nowrap;
+            text-decoration: none;
+            outline: 0;
+            color: #FFF;
+            font-size: 13px;
+            font-weight: bold;
+            font-family: "Malgun Gothic", sans-serif;
+            line-height: 1.5;
+            display: block;
+            white-space: nowrap;
+            background: #DF307F;
+            margin: 0;
+            padding: 4px 20px 5px 19px;
+            letter-spacing: -0.07em;
+        }
+
+        .btn_sm_cart a:hover {
+            margin: 0;
+            background: #c82370;
+        }
+
+        .btn_sm_buyitnow {
+            display: inline-block;
+            padding: 0;
+            vertical-align: middle;
+            text-align: center;
+            overflow: hidden;
+            text-decoration: none;
+            cursor: pointer;
+            background: #df307f;
+        }
+
+
+        .btn_sm_buyitnow a:hover {
+            background: #cd394d;
+        }
+
+        .btn_sm_buyitnow a {
+            white-space: nowrap;
+            text-decoration: none;
+            outline: 0;
+            color: #FFF;
+            font-size: 13px;
+            font-weight: bold;
+            font-family: "Malgun Gothic", sans-serif;
+            line-height: 1.5;
+            display: block;
+            white-space: nowrap;
+            background: #e24457;
+            margin: 0;
+            padding: 4px 20px 5px 19px;
+            letter-spacing: -0.07em;
+        }
+
+        /*--------------------------우측 상단 floating 배너----------------- */
+        .floating_bn_wrap {
+            position: absolute;
+            right: -100px;
+            top: 0px;
+        }
+
+        .floating_bn_box {
+            float: left;
+            position: fixed;
+            right: auto;
+            margin-left: auto;
+            top: 75%;
+        }
+
+        .floating_bn_btn_close {
+            position: absolute;
+            top: -20%;
+            right: -10%;
+        }
+
+        /* -----------------------------section 01----------------------------- */
+
+        .section_wrap {
+            width: 1060px;
+            margin: 0 auto;
+            padding: 0;
+            position: relative;
+        }
+
+        .top_title_wrap {
+            margin: 0;
+            padding: 0;
+            line-height: 1.4;
+        }
+
+        .top_title_wrap a:hover {
+            text-decoration: underline;
+        }
+
+        .top_title_wrap .left {
+            width: 1000px;
+            float: left;
+            text-align: left;
+        }
+
+        .top_title_wrap .left .tlist li {
+            list-style: none;
+            padding-bottom: 12px;
+        }
+
+        .top_title_wrap .right {
+            width: 60px;
+            float: right;
+            text-align: right;
+            padding-top: 10px;
+        }
+
+        .top_main_title {
+            font-size: 26px;
+            font-family:
+                "Noto Sans KR",
+                Malgun Gothic,
+                "Segoe WPC",
+                "Segoe UI",
+                "Apple SD Gothic Neo",
+                Helvetica,
+                AppleGothic,
+                Sans-serif;
+            color: #222;
+            text-decoration: none;
+            line-height: 1.5;
+            letter-spacing: -0.05em;
+            font-weight: 600;
+        }
+
+        .top_sub1_title {
+            font-size: 15px;
+            font-family: "Malgun Gothic", sans-serif;
+            color: #222;
+            text-decoration: none;
+            line-height: 1.4;
+            letter-spacing: -0.02em;
+        }
+
+        .top_sub2_title {
+            font-size: 14px;
+            font-family: "Malgun Gothic", sans-serif;
+            color: #444;
+            text-decoration: none;
+        }
+
+        .label_wrap span {
+            display: inline-block;
+            background: #ffffff;
+            border-radius: 3px;
+            padding: 0 8px;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+            font-size: 11px;
+            color: #555;
+            margin-right: 5px;
+            letter-spacing: -0.04em;
+            font-family:
+                Malgun Gothic,
+                "Segoe WPC",
+                "Segoe UI",
+                "Apple SD Gothic Neo",
+                Helvetica,
+                AppleGothic,
+                Sans-serif;
+            border: 1px solid #e5e5e5;
+        }
+
+        .floating_bn_wrap_l {
+            position: absolute;
+            left: -140px;
+            top: 0px;
+        }
+
+        /* -----------------------------도서커버----------------------------- */
+
+        /* 도서커버 섹션 컨테이너 */
+        .bookwrap_l {
+            margin: 0;
+            padding: 0;
+            float: left;
+            width: 502px;
+        }
+
+        #img_flip {
+            position: absolute;
+            opacity: 1;
+            z-index: 8;
+        }
+
+        .bookwrap_l .swiper_section {
+            position: absolute;
+            opacity: 0;
+            top: 0;
+        }
+
+        .bookwrap_l .cover .swiper_section .swiper_wrapper {
+            width: 502px;
+            height: 726px;
+            overflow: hidden;
+            display: flex !important;
+
+        }
+
+        .bookwrap_l .cover {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            float: left;
+            width: 502px;
+            height: 726px;
+            text-align: center;
+        }
+
+        .bookwrap_l .cover img {
+            max-width: 502px;
+        }
+
+        .slider_last {
+            position: relative;
+        }
+
+        #img_last {
+            position: absolute;
+            z-index: 10;
+            background: rgba(245, 245, 245, 0.9);
+            text-align: center;
+            top: calc(50% - 75px);
+            left: calc(50% - 75px);
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            font-size: 17px;
+            font-family: "Malgun Gothic", sans-serif;
+            color: #333;
+            font-weight: bold;
+            line-height: 1.4;
+            padding: 0;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            opacity: 0;
+            transition: opacity 0.2s ease-in-out;
+        }
+
+
+        /* 회전 도서 호버 왼쪽 화살표 */
+        .bookwrap_l .swiper_btn_prev {
+            position: absolute;
+            z-index: 10;
+            opacity: 0;
+            width: 25%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .swiper_btn_prev.new span {
+            background: url(../img/126_arrow-left-white.png) rgba(58, 58, 58, 0.4) no-repeat center / 15px auto;
+            left: 5px;
+        }
+
+        .bookwrap_l .swiper_btn_prev a {
+            top: 45%;
+            left: 10px;
+            position: absolute;
+        }
+
+        /* 회전 도서 호버 오른쪽 화살표 */
+        .bookwrap_l .swiper_btn_next {
+            position: absolute;
+            z-index: 10;
+            opacity: 0;
+            width: 25%;
+            height: 100%;
+            top: 0;
+            left: 75%;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .swiper_btn_next.new span {
+            background: url(../img/127_arrow-right-white.png) rgba(58, 58, 58, 0.4) no-repeat center / 15px auto;
+            right: 5px;
+        }
+
+        .swiper_btn_next.new span:hover,
+        .bookwrap_l .swiper_btn_prev span:hover {
+            cursor: pointer;
+        }
+
+        .bookwrap_l .swiper_btn_next a {
+            top: 45%;
+            right: 10px;
+            position: absolute;
+        }
+
+        /* 회전 도서 호버 왼쪽 && 오른쪽 화살표 모두 */
+
+        .bookwrap_l .swiper_btn_prev img,
+        .bookwrap_l .swiper_btn_next img {
+            width: 19px;
+            text-align: left;
+        }
+
+        .swiper_btn_prev.new span,
+        .swiper_btn_next.new span {
+            display: block;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1px;
+            color: transparent;
+            text-indent: -100rem;
+        }
+
+        .swiper_btn_prev:hover,
+        .swiper_btn_next:hover {
+            -webkit-transition: none;
+            -moz-transition: none;
+            -ms-transition: none;
+            -o-transition: none;
+            transition: none;
+            opacity: 1;
+        }
+
+        .swiper_btn_prev::after,
+        .swiper_btn_next::after {
+            background: none !important;
+        }
+
+        /*--- 도서 회전 속성 ---*/
+
+        #img_flip .book li {
+            -webkit-perspective: 1800px;
+            -moz-perspective: 1800px;
+            perspective: 1800px;
+            position: relative;
+            width: 100%;
+            float: left;
+            z-index: 1;
+        }
+
+        #img_flip section {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            -webkit-transform-style: preserve-3d;
+            -moz-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+            -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+            -moz-transition: -moz-transform 0.5s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+            transition: transform 0.5s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+
+            perspective-origin: top center;
+            perspective: top center;
+            perspective: 1800px;
+        }
+
+        #img_flip section .book {
+            position: relative;
+            width: 500px;
+            height: 726px;
+            transition: 0.5s;
+            transform-style: preserve-3d;
+            box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
+            cursor: url(../img/sub_004_mousecursor2.png), pointer;
+        }
+
+        #img_flip section .imgbox {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: initial;
+            height: initial;
+            object-fit: cover;
+        }
+
+        .swiper_section .swiper_slider {
+            width: 502px !important;
+            float: left;
+        }
+
+        /* 도서 책등 || 왼쪽 */
+
+        #img_flip section .book:before {
+            content: "";
+            position: absolute;
+            width: 90px;
+            height: 100%;
+            transform-origin: left top;
+            background: url(../img/sub_007_cover_left.jpg);
+            background-position: center;
+            transform: rotateY(90deg);
+            background-size: cover;
+        }
+
+        /* 도서 뒷면 */
+
+        #img_flip section .book:after {
+            overflow: hidden;
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url(../img/sub_006_cover_back.jpg);
+            background-position: center;
+            transform: rotateY(180deg) translateZ(90px);
+            background-size: cover;
+        }
+
+
+        .bookwrap_l .prev_box {
+            margin: 0px auto;
+            padding: 0;
+            width: 500px;
+            text-align: center;
+            font-family: "Malgun Gothic", sans-serif;
+            font-size: 13px;
+        }
+
+        .bookwrap_r .p_new_price {
+            color: #f03c97;
+            font-weight: bold;
+        }
+
+        .bookwrap_r {
+            margin: 0 0 0 56px;
+            padding: 0;
+            float: left;
+            width: 500px;
+        }
+
+        .bookwrap_r .info {
+            margin: 0;
+            padding: 5px 0 0 0;
+            float: left;
+            width: 500px;
+            text-align: left;
+            font-family: "Malgun Gothic", sans-serif;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+
+        .bookwrap_r .info_list {
+            clear: both;
+            padding: 0;
+            margin: 0 0 25px 0;
+        }
+
+        .bookwrap_r .info_list ul li {
+            list-style: none;
+            position: relative;
+            padding: 0 0 3px 0;
+            margin: 0;
+        }
+
+        /* 도서 정보 좌측 아이템 */
+        .bookwrap_r .info_list ul li .Litem {
+            position: absolute;
+            left: 0;
+            width: 100px;
+            color: #222;
+        }
+
+        .bookwrap_r .info_list ul li .Litem_P {
+            position: absolute;
+            left: 0;
+            width: 100px;
+            top: 3px;
+        }
+
+
+        /* 도서 정보 우측 아이템 */
+        .bookwrap_r .info_list ul li .Ritem {
+            margin-left: 100px;
+            width: 460px;
+            padding-bottom: 3px;
+            color: #222;
+        }
+
+
+        .bookwrap_r .info_list ul li .Ritem {
+            margin-left: 100px;
+            width: 400px;
+            padding-bottom: 3px;
+        }
+
+        .p_arrow_btn {
+            margin: 0 0 -3px 4px;
+        }
+
+        .txt_allbook {
+            color: #3774b1;
+            text-decoration: none;
+            line-height: 1.5;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        /* 출고 팝업창 */
+        .allbookrelease_layer {
+            position: absolute;
+            z-index: 101;
+        }
+
+        .layer_title2 {
+            background: #fff;
+            position: relative;
+            margin: 0;
+            padding: 25px 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 1px 1px #ccc;
+            font-family: "Malgun Gothic", sans-serif;
+            width: 400px;
+
+            display: none;
+        }
+
+        .layer_title2 p {
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .layer_title2 .bt_list2 ul li {
+            list-style: none;
+            background: url(../img/sub_028_icon_dot1.png) no-repeat 0 7px;
+            margin: 0;
+            padding: 0 0 7px 10px;
+            font-size: 14px;
+            line-height: 1.4;
+            letter-spacing: -0.02em;
+            float: none;
+        }
+
+        .layer_title2 .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .layer_title2 .bt_list2 {
+            margin: 5px 0 5px 0;
+            padding: 0;
+        }
+
+        /* 양탄자배송 섹션 */
+        .ytz_delivery {
+            display: inline-block;
+            background: #ffab00;
+            text-align: center;
+            font-size: 13px;
+            line-height: 1.4em;
+            color: #fff;
+            border-radius: 15px;
+            padding: 1px 7px 2px 7px;
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+
+        .ytz_position {
+            margin-top: 0px;
+            width: 65px;
+            height: 65px;
+        }
+
+
+        /* 더보기 btn */
+
+        .layer_title2 .bt_list2 .btn_layermore {
+            display: inline-block;
+        }
+
+        .layer_title2 .bt_list2 .btn_layermore a {
+            text-decoration: none;
+            color: #e9573f !important;
+            font-size: 8px !important;
+            font-weight: bold;
+            font-family: "Malgun Gothic", sans-serif;
+            padding: 0px 3px 3px 3px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            background: #f4f4f4;
+            vertical-align: top;
+        }
+
+        .layer_title2 .bt_list2 .btn_layermore a:hover {
+            text-decoration: underline;
+        }
+
+        /* 창의적 사고 섹션 */
+
+        .sub_pink {
+            color: #eb217c;
+            text-decoration: none;
+            line-height: 1.5;
+            font-weight: bold;
+        }
+
+        .btn_thisbook {
+            display: inline-block;
+        }
+
+        .btn_thisbook a {
+            white-space: nowrap;
+            text-decoration: none;
+            outline: 0;
+            color: #fff !important;
+            font-size: 13px;
+            font-weight: bold;
+            font-family: "Malgun Gothic", sans-serif;
+            line-height: 1.5;
+            white-space: nowrap;
+            margin: 0;
+            padding: 1px 7px 4px 7px;
+            letter-spacing: -0.02em;
+            background: #0fa8ff;
+        }
+
+        .bookwrap_r .info_list2 ul li {
+            list-style: none;
+            padding: 0 40px 0 0 !important;
+            margin: 0;
+            float: left;
+            letter-spacing: -0.06em;
+        }
+
+        /* 수량 섹션 */
+
+        .bookwrap_r .info_list ul li {
+            list-style: none;
+            position: relative;
+            padding: 0 0 3px 0;
+            margin: 0;
+        }
+
+        .input_box {
+            float: left;
+            border: 1px solid #cdcdcd;
+            margin: 0 10px 0 0;
+            padding: 0;
+            width: 91px;
+        }
+
+        .form_input {
+            border: 0;
+            padding: 11px 5px 11px 5px;
+            font-family: "Malgun Gothic", sans-serif;
+            font-size: 16px;
+            margin: 0px;
+            color: #222;
+            width: 56px;
+            float: left;
+        }
+
+        .form_arrow {
+            float: right;
+            text-align: center;
+            border: 0;
+            margin: 0;
+            padding: 1px 0;
+            width: 23px;
+            background: #f8f8f8;
+            border-left: 1px solid #cdcdcd;
+            font-size: 0;
+        }
+
+        .form_arrow img {
+            width: 23px;
+            height: 21px;
+            text-align: right;
+        }
+
+        /* -----------------장바구니 및 3개 버튼 섹션 ------------------*/
+
+        /* 장바구니 버튼 */
+
+        .btn_cart .btn_buyitnow .btn_gift {
+            display: inline-block;
+
+            padding: 0;
+            vertical-align: middle;
+            text-align: center;
+            overflow: hidden;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .btn_cart a {
+            white-space: nowrap;
+            text-decoration: none;
+            outline: 0;
+            color: #FFF;
+            font-size: 15px;
+            font-weight: bold;
+            font-family: "Malgun Gothic", sans-serif;
+            line-height: 1.5;
+            white-space: nowrap;
+            display: block;
+            background: #df307f;
+            margin: 0;
+            padding: 17px 30px 17px 27px;
+        }
+
+        .btn_cart:hover a {
+            background: #C82370;
+        }
+
+        .btn_buyitnow:hover a {
+            background: #CD394D
+        }
+
+        /* 구매하기 버튼 */
+
+
+        .btn_buyitnow a {
+            white-space: nowrap;
+            text-decoration: none;
+            outline: 0;
+            color: #FFF;
+            font-size: 15px;
+            font-weight: bold;
+            font-family: "Malgun Gothic", sans-serif;
+            line-height: 1.5;
+            white-space: nowrap;
+            background: #e24457;
+            display: block;
+            margin: 0;
+            padding: 17px 48px 17px 45px;
+        }
+
+
+        /* 선물하기, 보관하기 버튼 */
+
+        .btn_gift a {
+            white-space: nowrap;
+            text-decoration: none;
+            outline: 0;
+            border: solid 1px #df307f;
+            color: #df307f;
+            font-size: 15px;
+            font-weight: bold;
+            font-family: "Malgun Gothic", sans-serif;
+            line-height: 1.5;
+            display: block;
+            white-space: nowrap;
+            margin: 0;
+            padding: 16px 14px;
+        }
+
+        /* ---------------------중고로 팔기 섹션 ---------------------*/
+
+        .bookwrap_r .info_list3 ul li {
+            list-style: none;
+            padding: 0 2% 0 0;
+            margin: 0;
+            float: left;
+        }
+
+        .bookwrap_r .info_list3 {
+            float: left;
+            clear: both;
+            padding: 0;
+            margin: 0 0 25px 0;
+            width: 450px;
+        }
+
+        .bookwrap_r .info_more {
+            float: right;
+            padding: 0;
+            margin: 0;
+            text-align: right;
+            width: 50px;
+        }
+
+        /* ---------------------배너 광고 1 ---------------------*/
+        .sub_bannerwrap_01 {
+            width: 1000px;
+            height: 115px;
+            margin: 0 auto;
+            padding: 0 30px;
+            background: url(../img/sub_027_ad_banner_bgimg.jpg) top right no-repeat;
+            text-align: center;
+        }
+
+        .sub_bannerwrap_01 li {
+            float: left;
+            width: 235px;
+            padding-right: 15px;
+        }
+
+        /* ---------------------content 1 기본정보 ---------------------*/
+
+        .section_wrap::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .basic_info_content a:hover {
+            text-decoration: underline !important;
+        }
+
+        .mid_R {
+            width: 810px;
+            float: left;
+            margin: 0 0 0 250px;
+            padding: 5px 0 0px 0;
+            font-family: "Malgun Gothic", sans-serif;
+            color: #333;
+            font-size: 15px;
+            line-height: 1.8;
+            letter-spacing: -0.02em;
+            text-align: left;
+        }
+
+        .mid_L {
+            display: block;
+            position: absolute;
+            left: 0;
+            margin: 0;
+            padding: 10px 0 0 0;
+            width: 150px;
+            font-family: "Malgun Gothic", sans-serif;
+            color: #222;
+            font-size: 21px;
+            line-height: 1.4;
+            letter-spacing: -0.02em;
+            text-align: left;
+        }
+
+        .mid_info_list1 {
+            clear: both;
+            padding: 0;
+            margin: 0;
+        }
+
+        .mid_info_list1 ul li {
+            list-style: none;
+            padding: 0 25px 0 0;
+            margin: 0;
+            float: left;
+            color: #333;
+        }
+
+        .content_txt_left {
+            float: left;
+        }
+
+        .btn_check {
+            display: inline-block;
+            border: 1px solid #eee;
+            padding: 2px;
+        }
+
+        .btn_check a {
+            outline: 0;
+            color: #555;
+            font-size: 13px;
+            font-weight: bold;
+            font-family: "Malgun Gothic", sans-serif;
+            line-height: 1.5;
+            display: block;
+            white-space: nowrap;
+            margin: 0;
+            padding: 1px 7px 4px 7px;
+            letter-spacing: -0.02em;
+        }
+
+        .mid_R .mid_info_list2 ul li {
+            list-style: none;
+            background: url(../img/sub_028_icon_dot1.png) no-repeat 0 9px;
+            margin: 0;
+            padding: 0 0 6px 10px;
+            color: #333;
+            letter-spacing: -0.02em;
+        }
+
+        .btn_gift:hover {
+            background: #fafafa;
+        }
+
+        /* ---------------------content 2 이벤트 ---------------------*/
+
+        .event_content .swiper_slider img {
+            width: 266px;
+            padding: 0 6px 0 0;
+        }
+
+        .event_content .event_title {
+            margin: 0;
+            padding: 5px;
+            text-align: left;
+            color: #333;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+
+        .dots_custom {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .dots_custom button:hover {
+            cursor: pointer;
+        }
+
+        .dots_custom button {
+            width: 15px;
+            height: 15px;
+            margin: 0 3px;
+            border-radius: 50%;
+            background: #333333;
+            opacity: 0.2;
+            border: none;
+            font-size: 0;
+            margin: 0;
+            padding: 5px 0 0 0;
+            text-align: center;
+        }
+
+        .dots_custom li.slick-active button {
+            opacity: 1;
+        }
+
+        /* ---------------------content 5 책속에서 ---------------------*/
+
+        .refer_content .page {
+            padding-right: 5px;
+            color: #3885c9;
+            text-decoration: none;
+            font-size: 17px;
+            font-family: myriad;
+            font-style: italic;
+            letter-spacing: -0.02em;
+            display: block;
+        }
+
+        .refer_content_textbox {
+            padding-bottom: 15px;
+        }
+
+        /* ---------------------content 6 추천글 ---------------------*/
+        .recc_content li {
+            list-style: none;
+            background: url(../img/sub_028_icon_dot1.png) no-repeat 0 9px;
+            margin: 0;
+            padding: 0 0 10px 9px;
+            color: #333;
+            letter-spacing: -0.02em;
+        }
+
+        .recc_content li>div {
+            position: relative;
+        }
+
+        .recc_box_hidden {
+            position: absolute;
+            top: 25px;
+            left: 0px;
+            font-size: 15px;
+            background-color: #fff;
+            border: 1px solid #9e9e9e;
+            padding: 15px 50px 15px 15px;
+            z-index: 10;
+            display: none;
+            width: 200px;
+        }
+
+        .recc_box_hidden:hover {
+            cursor: pointer;
+            color: #3D89CB;
+        }
+
+        /* ---------------------content 7 저자 및 역자 ---------------------*/
+
+        .author_content_info {
+            list-style: none;
+            background: url(../img/sub_028_icon_dot1.png) no-repeat 0 9px;
+            margin: 0;
+            padding: 0 0 10px 9px;
+            color: #333;
+            letter-spacing: -0.02em;
+        }
+
+        .author_content_info a:hover {
+            text-decoration: underline;
+        }
+
+        .author_content .btn_check:hover {
+            background: #FAFAFA;
+        }
+
+        /* ---------------------content 8 출판사 제공 책소개 ---------------------*/
+
+        .publisher_content img {
+            max-width: 700px;
+        }
+
+        /* ---------------------bookple 북플 ---------------------*/
+
+        .mid_L_blue {
+            color: #0086cd;
+            position: absolute;
+            left: 2px;
+            margin: 0;
+            width: 150px;
+            font-family: "Malgun Gothic", sans-serif;
+            font-size: 21px;
+            line-height: 1.6;
+            text-align: left;
+            letter-spacing: -0.02em;
+            padding-top: 7px;
+        }
+
+        .bookple_list2 ul li {
+            float: left;
+            margin-right: 25px;
+        }
+
+        .bookple_list2 ul li:first-child a {
+            color: #0fa8ff;
+            text-decoration: underline;
+        }
+
+        .bookple_list2 .btn_thisbook {
+            float: right;
+        }
+
+        /* ---------------------그래프 ---------------------*/
+
+        .Ere_prod_graphwrap_a {
+            margin: 0 auto;
+            padding: 40px 0;
+            background: #f9f9f9;
+        }
+
+        .graph_box {
+            width: 1060px;
+            margin: 0 auto;
+            padding: 0;
+            font-size: 15px;
+            font-family: "Malgun Gothic", sans-serif;
+            color: #333;
+        }
+
+        .buyer_area_a {
+            width: 519px;
+            float: left;
+            margin: 0;
+            padding: 0 10px 0 0;
+            border-bottom: 0;
+            border-right: 1px dotted #ccc;
+        }
+
+        .buyer_box {
+            margin: 0;
+            padding: 0;
+        }
+
+        .anay_title {
+            margin: 0 0 30px 0;
+            padding: 0;
+            width: 519px;
+        }
+
+        .anay_Tround_L {
+            display: block;
+            margin: 0 30px 0 0;
+            text-align: center;
+            font-size: 19px;
+            font-family: "Malgun Gothic", sans-serif;
+            color: #0086cd;
+            line-height: 1.4;
+        }
+
+        .buyer_box .anay_conts {
+            float: left;
+            margin: 0;
+            padding: 0 5% 0 0;
+            width: 97%;
+            font-size: 13px;
+        }
+
+        .anay_conts .analysis {
+            float: left;
+            width: 100%;
+            padding: 0;
+        }
+
+        .analysis_box {
+            margin: 0;
+            padding: 0;
+        }
+
+        .tb_woman {
+            background: url(../img/sub_042_analysis_box_bg1.png) repeat-x 0 0;
+            text-align: right;
+            padding: 8px 0;
+            width: 45%;
+            font-size: 15px;
+            font-family: "Malgun Gothic", sans-serif;
+        }
+
+        .tb_tit {
+            text-align: center;
+            width: 10%;
+            padding: 3px 0 5px 0;
+            font-size: 15px;
+            font-family: "Malgun Gothic", sans-serif;
+            color: #333;
+            font-weight: 600;
+            letter-spacing: -0.05em;
+        }
+
+        .tb_man {
+            background: url(../img/sub_042_analysis_box_bg1.png) repeat-x 0 0;
+            text-align: left;
+            padding: 8px 0;
+            width: 45%;
+            font-size: 15px;
+        }
+
+        .tb_woman .bar {
+            float: right;
+        }
+
+        .tb_man .bar,
+        .tb_right .bar {
+            float: left;
+        }
+
+        .bar img {
+            width: 100%;
+            height: 20px;
+        }
+
+        .tb_woman .per {
+            background: #f9f9f9;
+            padding-bottom: 2px;
+            width: 18%;
+            float: left;
+            padding-right: 5px;
+            font-size: 15px;
+            font-family: "Malgun Gothic", sans-serif;
+            font-style: italic;
+            color: #000;
+            letter-spacing: -0.05em;
+        }
+
+        .tb_man .per {
+            background: #f9f9f9;
+            padding-bottom: 2px;
+            width: 18%;
+            float: right;
+            padding-left: 5px;
+            font-size: 15px;
+            font-family: "Malgun Gothic", sans-serif;
+            font-style: italic;
+            color: #000;
+            letter-spacing: -0.05em;
+            text-align: right;
+        }
+
+        .tb_woman_last {
+            text-align: right;
+            padding: 8px 0;
+            width: 45%;
+            font-size: 15px;
+            padding-top: 10px;
+        }
+
+        .tb_man_last {
+            text-align: left;
+            padding: 8px 0;
+            width: 45%;
+            font-size: 15px;
+            padding-top: 10px;
+        }
+
+        .star_area_a {
+            width: 520px;
+            float: left;
+            margin: 0;
+            padding: 0 0 0 10px;
+        }
+
+        .star_box {
+            margin: 0;
+            padding: 0;
+        }
+
+        .star_box .anay_conts {
+            float: left;
+            margin: 0;
+            padding: 0 0 0 5%;
+            width: 95%;
+            font-size: 13px;
+        }
+
+        .star_list {
+            float: left;
+            margin: 0;
+            padding: 0 0 0 0;
+            width: 100%;
+            font-size: 13px;
+            text-align: center;
+        }
+
+        .score_box {
+            display: inline-block;
+            margin: 0 auto 15px auto;
+            padding: 0;
+            text-align: center;
+        }
+
+        .score_box .star {
+            margin: 0;
+            padding: 0;
+            float: left;
+        }
+
+        .score_box .num {
+            float: left;
+            padding: 0 0 0 15px;
+            color: #ef3b96;
+            font-weight: bold;
+            font-size: 34px;
+        }
+
+        .star_list .tb_right {
+            background: url(../img/sub_042_analysis_box_bg1.png) repeat-x 0 0;
+            text-align: left;
+            padding: 8px 0;
+        }
+
+        .star_list .tb_left {
+            text-align: left;
+            width: 130px;
+            padding: 6px 0;
+        }
+
+        .tb_right .per {
+            background: #f9f9f9;
+            padding-bottom: 2px;
+            width: 15%;
+            float: right;
+            font-size: 14px;
+            font-family: "Malgun Gothic", sans-serif;
+            font-style: italic;
+            color: #111;
+            padding-left: 5px;
+            text-align: right;
+        }
+
+        /*--------------- 100자평 --------------------*/
+
+        .short_review_box .left1 {
+            margin: 0 5px 0 0;
+            padding: 0;
+            width: 710px;
+            float: left;
+            height: 100%;
+        }
+
+        .short_review_box .text_box {
+            border: 1px solid #d5d5d5;
+            margin: 0;
+            padding: 0px;
+            width: 708px;
+            height: 67.2px;
+        }
+
+        .Btext_area {
+            border: 0;
+            padding: 10px 10px;
+            width: 685px;
+            height: 45px;
+            font-family: "Malgun Gothic", sans-serif;
+            font-size: 14px;
+            color: #777;
+            text-align: left;
+            letter-spacing: -0.02em;
+            line-height: 1.6;
+            outline: none;
+        }
+
+        .short_review_box .right1 {
+            float: right;
+            margin: 0;
+            padding: 0px;
+            width: 95px;
+            height: 100%;
+        }
+
+        .btn_register {
+            display: inline-block;
+            padding: 0;
+            vertical-align: middle;
+            text-align: center;
+            overflow: hidden;
+            text-decoration: none;
+            cursor: pointer;
+            background: #0fa8ff;
+        }
+
+        .btn_register a {
+            white-space: nowrap;
+            text-decoration: none;
+            outline: 0;
+            color: #FFF;
+            font-size: 15px;
+            font-weight: bold;
+            font-family: "Malgun Gothic", sans-serif;
+            line-height: 1.5;
+            display: block;
+            white-space: nowrap;
+            background: #0fa8ff;
+            margin: 0;
+            width: 95px;
+            padding: 23px 0px 22px 0px;
+        }
+
+        .Hleft2 {
+            float: left;
+            margin: 0 20px 0 0;
+            padding: 0;
+        }
+
+        .myreview {
+            float: left;
+            margin: 0;
+            padding: 9px 10px;
+            width: 240px;
+            border: 1px solid #d5d5d5;
+            color: #222;
+        }
+
+        .re_select-icon {
+            cursor: pointer;
+            float: right;
+            margin-top: 2px;
+        }
+
+        .Hright2 {
+            float: right;
+            margin: 0;
+            padding: 0px;
+        }
+
+        .short_review_title_box {
+            margin: 0;
+            padding: 10px 0;
+            width: 100%;
+            height: 50px;
+            border-bottom: 1px solid #d5d5d5;
+        }
+
+        .title_left {
+            float: left;
+            margin: 0;
+            padding: 0;
+        }
+
+        .title_left a {
+            margin: 0;
+            padding: 0 25px 0 5px;
+            font-size: 16px;
+        }
+
+        .title_right {
+            float: right;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            font-size: 15px;
+        }
+
+        /*--리뷰 리스트 : 형식 공유--*/
+
+        .review_list .HL_write {
+            float: left;
+            margin: 0;
+            padding: 0 0 0 0;
+            width: 655px;
+            font-size: 15px;
+            font-family: "Malgun Gothic", sans-serif;
+            color: #333;
+            letter-spacing: -0.02em;
+            line-height: 1.6;
+        }
+
+        .review_list .HL_star {
+            float: left;
+            margin: 0 15px 0 0;
+            padding: 0;
+            text-align: left;
+            width: 130px;
+        }
+
+        /*--리뷰 리스트 : 마이 리뷰 --*/
+
+        .HL_write_my {
+            clear: both;
+            display: block;
+            width: 100%;
+        }
+
+        .btn_check:hover {
+            background: #fafafa;
+        }
+
+        /*--------------- 하단 슬라이더 --------------------*/
+
+        .bottom_slider_wrap {
+            margin: 0;
+            padding: 35px 0 0 0;
+            background-color: #fff;
+            border-top: 1px solid #cccccc;
+            position: relative;
+        }
+
+        .bottom_slider_wrap .textbox {
+            width: 1060px;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        .bottom_slider_title {
+            float: left;
+            font-family: "Malgun Gothic", sans-serif;
+            color: #111;
+            font-size: 18px;
+            line-height: 1.5;
+            letter-spacing: -0.02em;
+            text-align: left;
+            margin-bottom: 0 0 40px 0;
+            padding: 0 50px 0 0;
+        }
+
+        .bottom_slider_wrap .swiper {
+            margin: 0 auto;
+            width: 1000px;
+            height: 321px;
+            overflow: hidden;
+        }
+
+        .swiper_slider .cover {
+            width: 150px;
+            height: auto;
+            margin: 0 auto 5px auto;
+            position: relative;
+        }
+
+        .bottom_slider_wrap .cover img {
+            width: 150px;
+            height: 216px;
+        }
+
+        .swiper_slider .title {
+            margin: 0 auto;
+            padding: 0;
+            text-align: center;
+            font-size: 14px;
+            font-family: "Malgun Gothic", sans-serif;
+            word-break: break-all;
+            line-height: 1.5;
+            letter-spacing: -0.02em;
+            width: 150px;
+        }
+
+        /*--------------- 반품 교환 안내 --------------------*/
+
+        .Tit_table {
+            margin: 0;
+            padding: 15px 20px;
+            text-align: left;
+            color: #333;
+            font-family: "Malgun Gothic", sans-serif;
+            font-size: 14px;
+            border-bottom: 1px solid #dfdfdf;
+            line-height: 1.6;
+            letter-spacing: -0.02em;
+        }
+
+        .Tit_table_L {
+            background: #f9f9f9;
+        }
+
+        .Tit_table_R {
+            background: #fff;
+        }
